@@ -1,0 +1,435 @@
+:root {
+    --fb-orange: #f25a22; /* Laranja exato do logo e ícones */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+/* Ajuste da Barra Superior */
+.top-bar {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 500;
+}
+.px-5{
+    padding-right: 7% !important;
+    padding-left: 7% !important;
+}
+/* Ajuste do Logo para sobrepor corretamente */
+.logo-fiel {
+    width: 12.2%;
+    position: absolute;
+    top: -50px;
+    z-index: 10;
+}
+
+/* Navbar */
+.nav-link {
+       font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.nav-link.active { color: var(--fb-orange) !important; }
+
+.btn-catalogue {
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.display-4{
+    font-size: 56px !important;
+    font-weight: 400;
+    font-family: "Kanit";
+    line-height: 1.2;
+}
+
+/* Hero Section */
+.hero-fiel {
+    height: 57vh;
+    background: url('https://www.fbtrophies.co.za/wp-content/uploads/2023/03/Sports-banner-1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.orange-line {
+      height: 3px;
+    display: inline-grid;
+    align-items: center;
+    width: 50%;
+    background-color: var(--fb-orange);
+    margin: 0px 0;
+}
+
+.btn-contact-fiel {
+    display: inline-block;
+    border: 3px solid var(--fb-orange);
+    color: white;
+    padding: 17px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.3);
+}
+.btn-contact-fiel:hover{
+    background-color: var(--fb-orange);
+    border-color: var(--fb-orange);
+    color: #fff;
+}
+/* Barra de Ícones - CORREÇÃO: Círculos Laranjas */
+.icon-section-fiel {
+    background-color: #000;
+    border-top: 2px solid var(--fb-orange); /* Linha divisória laranja conforme */
+}
+
+.circle-orange {
+ width: 80px;
+    height: 80px;
+    border: 2px solid var(--fb-orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+.circle-orange:hover{
+    background-color: var(--fb-orange);
+    border-color: var(--fb-orange);
+    color: #35baf2;
+}
+.mp-1{
+        margin-right: 6rem;
+    margin-left: 6rem;
+}
+.circle-orange i{
+    border-color: #ffffff;
+    border-width: 0px;
+    box-sizing: content-box;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0;
+    border-radius: 50%;
+    font-size: 40px;
+}
+html.awb-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--fb-orange);
+}
+.icon-box p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* WhatsApp Widget */
+.wa-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #333;
+    padding: 5px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.wa-widget img { width: 25px; margin-right: 10px; }
+
+
+/* Seção de Títulos */
+.section-title {
+    color: var(--fb-orange);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Cards de Troféus */
+.trophy-card {
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.trophy-img-box {
+    background-color: #e9e9e9; /* Fundo cinza claro da imagem */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.card-logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px; /* Logo pequeno no canto */
+}
+
+.trophy-main-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.trophy-info {
+    background-color: #000; /* Fundo preto das informações */
+    padding: 20px 10px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trophy-name {
+    color: #fff;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.trophy-price {
+    color: var(--fb-orange);
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Botão Find More */
+.btn-find-more {
+    display: inline-block;
+    border: 2px solid var(--fb-orange);
+    color: var(--fb-orange);
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-find-more:hover {
+    background-color: var(--fb-orange);
+    color: #fff;
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+    .trophy-img-box { min-height: 250px; }
+}
+/* Container da imagem precisa de overflow hidden para o overlay não escapar */
+
+
+/* Logo deve ficar acima de tudo */
+.card-logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    z-index: 10;
+}
+
+/* Estilo da Camada Laranja */
+.trophy-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  var(--fb-orange); /* Cor var(--fb-orange) com transparência */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Invisível por padrão */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 5;
+}
+
+/* Texto dentro do Hover */
+.hover-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Ação de Hover: Quando passar o mouse no CARD, mostra o overlay */
+.trophy-card:hover .trophy-hover-overlay {
+    opacity: 1;
+}
+
+/* Opcional: Pequeno zoom na imagem ao dar hover */
+.trophy-card:hover .trophy-main-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* Container do Card */
+.promo-card {
+    background-color: #1a1a1a; /* Fundo base escuro */
+    border-radius: 20px;
+    overflow: hidden; /* Corta a imagem nas bordas arredondadas */
+    border: 1px solid  var(--fb-orange);
+}
+
+/* Lado do Texto */
+.promo-content {
+    padding: 80px 60px; /* Espaçamento interno generoso */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-title {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Lado da Imagem: Preenchimento Total */
+.promo-image-side {
+    background-image: linear-gradient(to right, #1a1a1a, transparent 40%), 
+                      url('PLAYER.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Garante altura em telas menores */
+}
+.promo-image-side2 {
+    background-image: linear-gradient(to right, #1a1a1a, transparent 40%), 
+                      url('GIFT.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Garante altura em telas menores */
+}
+
+/* Botão Estilizado */
+.btn-promo {
+    background-color: var(--fb-orange);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+.btn-small-text {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.btn-main-text {
+    font-weight: bold;
+    font-size: 16px;
+}
+.promo-text{
+    color: #fff;
+}
+/* Responsividade para Mobile */
+@media (max-width: 992px) {
+    .promo-image-side {
+        min-height: 300px;
+        background-image: linear-gradient(to bottom, #1a1a1a, transparent 30%), 
+                          url('PLAYER.png');
+    }
+    .promo-content {
+        padding: 40px 30px;
+        text-align: center;
+    }
+    .promo-title { font-size: 2.2rem; }
+    .btn-promo { margin: 0 auto; }
+}
+/* Container Arredondado do Card */
+.promo-card {
+    background-color: #1a1a1a; /* Cor de fundo escura conforme imagem */
+    border-radius: 25px; /* Bordas bem arredondadas */
+    overflow: hidden; /* Garante que a imagem não escape das bordas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Tipografia e Textos */
+.promo-content {
+    color: white;
+}
+
+.promo-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.text-orange {
+    color: var(--fb-orange);
+}
+
+.promo-text {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Estilo do Lado Direito (Imagem) */
+.promo-img-box {
+    /* Troque a URL abaixo pela sua imagem (da bola ou do jogador) */
+    background-image: url('GIFT.png'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 450px; /* Garante altura mínima em qualquer tela */
+}
+
+/* Botão Estilizado (Igual à imagem) */
+.btn-promo-action {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--fb-orange);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-promo-action:hover {
+    background-color: #d14a1a;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-top-text {
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-bottom: 2px;
+}
+
+.btn-bottom-text {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 991px) {
+    .promo-title { font-size: 2.5rem; }
+    .promo-img-box { min-height: 300px; }
+    .promo-content { text-align: center; padding: 40px 20px !important; }
+    .btn-promo-action { margin: 0 auto; }
+}
