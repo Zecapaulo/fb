@@ -6,7 +6,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
-
+a {
+    color: white;
+    text-decoration: none;
+}
 /* Barra Superior */
 .top-bar {
     background-color: #ffffff;
