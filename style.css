@@ -1045,6 +1045,7 @@ html.awb-scroll {
     .contact-info-card p {
         font-size: 0.85rem;
         word-break: break-word;
+        color: white;
     }
 
     /* WhatsApp */
