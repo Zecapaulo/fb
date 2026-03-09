@@ -149,7 +149,10 @@ html.awb-scroll {
     z-index: 999;
 }
 .wa-widget img { width: 25px; margin-right: 10px; }
-
+.wa-widget a{
+    color: white;
+    text-decoration: none;
+}
 /* Seção de Títulos */
 .section-title {
     color: var(--fb-orange);
@@ -1083,3 +1086,5 @@ html.awb-scroll {
         font-size: 1.5rem;
     }
 }
+
+
