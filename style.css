@@ -794,6 +794,9 @@ html.awb-scroll {
 
 /* Mobile */
 @media (max-width: 767px) {
+       header{
+        display: none;
+    }
     .top-bar {
         text-align: center !important;
     }
@@ -1056,6 +1059,9 @@ html.awb-scroll {
 
 /* Small phones */
 @media (max-width: 400px) {
+    header{
+        display: none;
+    }
     .hero-fiel h1 {
         font-size: 1.5rem !important;
     }
