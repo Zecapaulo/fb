@@ -101,40 +101,78 @@
             z-index: 110;
             filter: brightness(0) invert(1);
         }
+    /* 5. AJUSTES PARA VERSÃO MOBILE HORIZONTAL */
+    @media (max-width: 768px) {
+        .row-mobile-horizontal {
+            flex-direction: row !important; /* Força ficar lado a lado */
+            flex-wrap: nowrap;
+        }
+        
+        .content-col {
+            padding: 40px 10px 15px 10px; /* Reduz padding no mobile */
+            border-radius: 30px 0 0 30px;
+        }
+
+        .logo-img {
+            width: 70px; /* Logo menor no mobile */
+        }
+
+        .logo-container {
+            top: -35px;
+        }
+
+        .promo-title {
+            font-size: 1rem; /* Título menor para caber */
+        }
+
+        .promo-price {
+            font-size: 2.5rem; /* Preço menor para caber */
+        }
+
+        .promo-subtitle {
+            font-size: 0.6rem;
+        }
+
+        .btn-quote {
+            font-size: 0.8rem;
+            padding: 8px;
+        }
+    }
 
     </STYle>
 </head>
 <body>
-<div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
+    <div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="logo-container text-center">
+                <img src="https://www.fbtrophies.co.za/wp-content/uploads/2020/02/logo-2-e1582647657971.png" alt="Logo" class="logo-img">
+            </div>
+
+            <div class="row g-0 row-mobile-horizontal">
                 
-                <div class="logo-container text-center">
-                    <img src="https://www.fbtrophies.co.za/wp-content/uploads/2020/02/logo-2-e1582647657971.png" alt="Logo" class="logo-img">
+                <div class="col-6 content-col text-center">
+                    <p class="promo-subtitle text-uppercase mb-1">Monthly Quote Special</p>
+                    <h2 class="promo-title">Wooden & Glass<br>Trophy with Engraving</h2>
+                    <div class="promo-price">R520</div>
+                    <a href="https://wa.me/27824596367?text=Hi!%20I'm%20interested%20in%20the%20Monthly%20Quote%20Special:%20Wooden%20%26%20Glass%20Trophy%20with%20Engraving%20for%20R520." 
+                       class="btn btn-quote w-100" target="_blank" rel="noopener noreferrer">
+                        Get a quote
+                    </a>
                 </div>
 
-                <div class="row g-0">
-                    <div class="col-md-6 content-col text-center">
-                        <p class="promo-subtitle text-uppercase">Monthly Quote Special</p>
-                        <h2 class="promo-title">Wooden & Glass<br>Trophy with Engraving</h2>
-                        <div class="promo-price">R520</div>
-                       <a href="https://wa.me/27824596367?text=Hi!%20I'm%20interested%20in%20the%20Monthly%20Quote%20Special:%20Wooden%20%26%20Glass%20Trophy%20with%20Engraving%20for%20R520.%20Could%20you%20please%20provide%20more%20details?" 
-   class="btn btn-quote w-100" 
-   target="_blank" 
-   rel="noopener noreferrer">
-   Get a quote
-</a>
-                    </div>
-
-                    <div class="col-md-6 image-col">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <img src="https://www.fbtrophies.co.za/wp-content/uploads/2026/03/ChatGPT-Image-11-de-mar.-de-2026-08_17_22.png" alt="Troféu" class="trophy-img">
-                    </div>
+                <div class="col-6 image-col">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2" 
+                            data-bs-dismiss="modal" aria-label="Close" 
+                            style="z-index: 110; filter: brightness(0) invert(1);"></button>
+                    <img src="https://www.fbtrophies.co.za/wp-content/uploads/2026/03/ChatGPT-Image-11-de-mar.-de-2026-08_17_22.png" alt="Troféu" class="trophy-img">
                 </div>
-
+                
             </div>
         </div>
     </div>
+</div>
     <header class="top-bar py-1">
         <div class="container-fluid px-5 p-2 text-end">
             <small>Call Us Today! (011) 823 1758 | calisto@trophiesengraving.co.za</small>
